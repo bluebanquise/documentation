@@ -2,9 +2,10 @@
 Introduction
 ============
 
-**BlueBanquise** is a collection of Ansible roles, gathered as a unified stack, 
+**BlueBanquise** is a collection of Ansible roles, gathered 
+with additional packages and tools as a unified stack, 
 whose purpose is to deploy and manage clusters of hosts.
-These clusters can be from few workstations to very large HPC,
+These clusters can be from few workstations to very large High Performance Computers,
 servers farm clusters, K8S clusters, etc.
 
 .. image:: images/clusters/3_size_single_row.png
@@ -13,9 +14,9 @@ servers farm clusters, K8S clusters, etc.
 simplicity while managing very complex architecture.
 
 The **BlueBanquise** project also aims to train new system administrators to the
-deployment of bare metal servers.
+deployment of bare metal server's infrastructures.
 
-The stack rely on **Ansible**.
+The stack relies on **Ansible**.
 Ansible was chosen for its simplicity.
 The Ansible inventory groups/variables mechanism can cover from very simple to
 very sophisticated configurations. Ansible is not the fastest tool.
@@ -31,19 +32,21 @@ The **BlueBanquise** stack is made of two main parts:
 
 This documentation is structured as the following:
 
-* Few basic vocabulary, that can help reading this documentation
-* Instructions on how to boostrap BlueBanquise.
-* A quick start guide on how to deploy a basic cluster.
-* Detailed instructions on how to deploy an advanced cluster.
-* Detailed instructions on how to deploy a very large cluster.
+* Few basic vocabularies, that can help reading this documentation.
+* A quick start on how to bootstrap and deploy a very basic cluster with the stack.
+* Detailed instructions on how to bootstrap and deploy a standard cluster.
+* Detailed instructions on how to deploy a sophisticated and large cluster.
 * Instructions on how to use some community or external roles to enhance cluster.
-    * Monitoring with Prometheus
-    * HPC job scheduling with Slurm
-    * K8S cluster with Kubespray
-* Instructions on how to use BlueBanquise as an Ansible collection of roles.
+
+   * Users management with FreeIPA.
+   * Monitoring with Prometheus.
+   * HPC job scheduling with Slurm.
+   * K8S cluster with Kubespray.
+
+* Instructions on how to use BlueBanquise as an autonomous Ansible collection.
 
 Since one of the main BlueBanquise goals is also to be a training for new Linux system 
-administrators, at the end of documentation, few tutorial are also provided, for generic knowledge.
+administrators, at the end of documentation, few tutorials are provided, for generic knowledge.
 Advanced users can skip these parts:
 
 * How to manually deploy a test HPC cluster (generic knowledge, not related to the stack)
@@ -53,7 +56,7 @@ Advanced users can skip these parts:
 
 If you encounter any bugs/issues or have any comments, please inform us.
 
-Note also that since BlueBanquise is a multi-distribution based stack, parts of the
+Note also that since BlueBanquise is a multi-distributions based stack, parts of the
 documentation may be dedicated to a specific Linux distribution (always
 explicitly mentioned).
 
