@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'BlueBanquise Documentation'
+project = u'BlueBanquise'
 copyright = u'2022, Benoît Leveugle, Johnny Keats.'
 author = u'Benoît Leveugle, Johnny Keats, Bruno Travouillon, Tim Gellner, David Pieters, Neil Munday'
 
@@ -84,7 +84,7 @@ pygments_style = None
 #     'logo_name': 'Training',
 #     }
 html_logo = "logo.png"
-html_theme = "furo"
+html_theme = "sphinx_book_theme"
 html_theme_path = ["_themes"]
 #html_css_files = ["custom.css"]
 html_theme_path = ["_themes", ]
@@ -109,8 +109,21 @@ html_static_path = ['_static']
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
 # 'searchbox.html']``.
 #
-# html_sidebars = {}
 
+
+html_sidebars = {
+    "**": [
+        #"sidebar-logo.html",
+"search-field.html",
+                "sponsor.html",
+
+#"relations.html",
+"sbt-sidebar-nav.html",
+"sbt-sidebar-footer.html",
+
+
+    ]
+}
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
