@@ -94,7 +94,10 @@ html_theme_path = ["_themes", ]
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+  "repository_url": "https://github.com/bluebanquise/documentation/",
+  "use_repository_button": True,
+        }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -111,19 +114,17 @@ html_static_path = ['_static']
 #
 
 
-html_sidebars = {
-    "**": [
-        #"sidebar-logo.html",
-"search-field.html",
-                "sponsor.html",
-
-#"relations.html",
-"sbt-sidebar-nav.html",
-"sbt-sidebar-footer.html",
-
-
-    ]
-}
+#html_sidebars = {
+#    "**": [
+#        #"sidebar-logo.html",
+#"search-field.html",
+#                "sponsor.html",
+#
+##"relations.html",
+#"sbt-sidebar-nav.html",
+#"sbt-sidebar-footer.html",
+#    ]
+#}
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
