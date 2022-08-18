@@ -2,8 +2,6 @@
 Vocabulary
 ==========
 
-Lets establish few common terms before going deeper in technical details.
-
 Some words are important in **BlueBanquise**. Most of them are described here.
 
 Ansible vocabulary
@@ -20,7 +18,7 @@ something else.
    :align: center
 
 
-Hosts are defined in *~/bluebanquise/inventory/cluster/* folder.
+Hosts are defined in ``~/bluebanquise/inventory/cluster/`` folder.
 
 Please do a difference between an **Ansible managed host**, and a **host**.
 All equipment that can have an ip address on the network are considered "host",
@@ -265,9 +263,9 @@ redefine the whole logic of the stack without editing the stack code). Etc.
 
 Inventory can be seen as a giant pizza, in 3D then flatten.
 
-* *Paste* is the variable in /etc/bluebanquise/inventory/group_vars/all
-* Then *large ingredients* comes from /etc/bluebanquise/inventory/group_vars/equipment_myequipment
-* Then *small ingredients* above are the /etc/bluebanquise/inventory/cluster/nodes/
+* *Paste* is the variable in ``~/bluebanquise/inventory/group_vars/all``
+* Then *large ingredients* comes from ``~/bluebanquise/inventory/group_vars/equipment_myequipment``
+* Then *small ingredients* above are the ``~/bluebanquise/inventory/cluster/nodes/``
 * And *pepper and tomatoes* (last layer) is the extra-vars at call.
 
 .. image:: images/pizza_example.svg
@@ -358,11 +356,11 @@ network (most of the time an Interconnect network).
 Equipment profiles
 ------------------
 
-In **BlueBanquise**, nodes are always part of a group starting with
+In **BlueBanquise**, nodes are often part of a group starting with
 prefix **equipment_**. These groups are called *equipment profiles*.
 
 They are used to provide to hosts of this group the **equipment_profile**
-parameters (this includes hosts operating system parameters, kernel parameters,
+parameters (vender, server model, hardware embed, hosts operating system parameters, kernel parameters,
 partitioning, etc.), and other variables if needed like dedicated
 authentication parameters. These variables are prefixed with **ep_**.
 
@@ -381,8 +379,5 @@ For now, just keep in mind these variables exist. These will be discussed later.
 
 You can now follow the next part, depending of your needs:
 
-* learn basic system administration on how to deploy bare metal servers
-* learn Ansible
-
-Or if you already know basic system administration and Ansible, you can skip
-these tutorials and jump directly to the BlueBanquise part.
+* Proceed to quick start to deploy a very basic cluster.
+* Proceed with a standard full cluster deployment.
